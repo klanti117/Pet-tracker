@@ -9,7 +9,7 @@ const petOption = [
 const AddPet = ({ onAdd }) => {
   const [petName, setPetName] = useState("");
   const [profilePicture, setProfilePicture] = useState("");
-  const [species, setSpecies] = useState(null);
+  const [species, setSpecies] = useState("");
   const [isFriendly, setIsFriendly] = useState(false);
 
   const onSubmit = (e) => {
@@ -18,7 +18,7 @@ const AddPet = ({ onAdd }) => {
     //to Clear form
     setPetName("");
     setProfilePicture("");
-    setSpecies(null);
+    setSpecies("");
     setIsFriendly(false);
   };
 
@@ -54,9 +54,11 @@ const AddPet = ({ onAdd }) => {
               type="radio"
               name="species"
               value={x.value}
+              checked={species === x.value}
               onChange={(e) => setSpecies(e.target.value)}
             />
             {x.label}
+            <br></br>
           </label>
         ))}
       </fieldset>

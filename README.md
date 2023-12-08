@@ -9,3 +9,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm run server`
+
+Runs the fake db using JSON Server\
+Open [http://localhost:3100/pets](http://localhost:3100/pets) to view it in your browser.
