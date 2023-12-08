@@ -20,6 +20,13 @@
       "profilePicture": "https://images.unsplash.com/photo-1608374398721-38b323502c5c?q=80&w=2118&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "species": "bird",
       "isFriendly": false
+    },
+    {
+      "petName": "lolo",
+      "profilePicture": "https://images.unsplash.com/photo-1612940960267-4549a58fb257?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "species": "dog",
+      "isFriendly": false,
+      "id": 5
     }
   ]
 }
