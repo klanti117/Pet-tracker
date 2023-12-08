@@ -23,10 +23,18 @@ function App() {
   };
 
   //Add pets
-  const addPet = (pet) => {
-    const id = Math.floor(Math.random() * 1000) + 1;
-    const newPet = { id, ...pet };
-    setPets([...pets, newPet]);
+  const addPet = async (pet) => {
+    const res = await fetch("http://localhost:3100/pets", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(pet),
+    });
+
+    const data = res.json();
+
+    setPets([...pets, data]);
   };
 
   //Remove pets
