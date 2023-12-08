@@ -38,7 +38,7 @@ const AddPet = () => {
         <br />
       </fieldset>
       <label>
-        <input type="checkbox" /> <span>Are They Friendly?</span>
+        <input type="checkbox" /> Are They Friendly?
       </label>
       <input type="submit" value="Add Pet!" />
     </form>
