@@ -1,9 +1,10 @@
 import AddPet from "./AddPet";
 import ListPets from "./ListPets";
 import "./index.css";
+import { useState } from "react";
 
 function App() {
-  const pets = [
+  const [pets, setPets] = useState([
     {
       id: 1,
       petName: "Fluffy",
@@ -28,13 +29,21 @@ function App() {
       species: "bird",
       isFriendly: false,
     },
-  ];
+  ]);
+
+  const removePet = (id) => {
+    setPets(pets.filter((pet) => pet.id !== id));
+  };
   return (
     <div className="">
       <h1>Pet Tracker</h1>
       <AddPet />
       <h2>Pet List</h2>
-      <ListPets pets={pets} />
+      {pets.length > 0 ? (
+        <ListPets pets={pets} onRemove={removePet} />
+      ) : (
+        "No pets to show"
+      )}
     </div>
   );
 }
