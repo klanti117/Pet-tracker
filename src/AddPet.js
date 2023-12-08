@@ -48,39 +48,6 @@ const AddPet = ({ onAdd }) => {
         <legend>
           Species<span style={requiredFields}>*</span>
         </legend>
-        {/* <labe>
-          <input
-            type="radio"
-            name="species"
-            value={species}
-            onChange={(e) => setSpecies(e.target.value)}
-            required
-          />
-          Cat
-        </labe>
-        <br />
-        <labe>
-          <input
-            type="radio"
-            name="species"
-            value={species}
-            onChange={(e) => setSpecies(e.target.value)}
-            required
-          />
-          Dog
-        </labe>
-        <br />
-        <label>
-          <input
-            type="radio"
-            name="species"
-            value={species}
-            onChange={(e) => setSpecies(e.target.value)}
-            required
-          />
-          Bird
-        </label>
-        <br /> */}
         {petOption.map((x, i) => (
           <label key={i}>
             <input
